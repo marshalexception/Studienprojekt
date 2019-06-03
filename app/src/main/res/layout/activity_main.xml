@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="beispiel.studienprojekt.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbar"
+        android:titleTextColor="@color/ToolbarTitle"
+        android:title="Hauptmenü">
+
+        <TextView
+            android:id="@+id/toolbar_username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/toolbar_logouttime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:text="@string/Dispenserbestückung"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewDispenser"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_alignTop="@+id/imageViewDispenser"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/TextViewDocumentation"/>
+
+    <TextView
+        android:text="@string/Medikamentengabe"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:layout_below="@+id/TextViewDispenser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/TextViewMedication"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        />
+
+    <TextView
+        android:text="@string/Einzelscan"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:layout_below="@+id/TextViewMedication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/TextViewSimpleScan"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        />
+
+
+    <TextView
+        style="@style/TextNormalAppearance"
+        android:text="@string/settings"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewSettings"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_alignTop="@+id/imageViewSettings"
+        android:layout_alignLeft="@+id/TextViewSimpleScan"
+        android:layout_alignStart="@+id/TextViewSimpleScan"
+        android:background="?attr/selectableItemBackground"
+        />
+
+    <TextView
+        android:text="@string/documentation"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewDocumentation"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_alignTop="@+id/imageViewDocumentation"
+        android:layout_alignLeft="@+id/TextViewSettings"
+        android:layout_alignStart="@+id/TextViewSettings"
+        android:background="?attr/selectableItemBackground"
+        />
+
+    <TextView
+        android:text="@string/Logout"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextViewLogout"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_below="@+id/TextViewDocumentation"
+        android:layout_alignLeft="@+id/TextViewDocumentation"
+        android:layout_alignStart="@+id/TextViewDocumentation"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:background="?attr/selectableItemBackground"
+        />
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        app:srcCompat="@drawable/dispenserbestueckung"
+        android:id="@+id/imageViewDispenser"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/toolbarMainActivity"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        app:srcCompat="@drawable/medikamentengabe"
+        android:id="@+id/imageViewMedication"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/TextViewDispenser"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        app:srcCompat="@drawable/einzelscan"
+        android:id="@+id/imageViewSimpleScan"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/TextViewMedication"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        app:srcCompat="@drawable/einstellungen"
+        android:id="@+id/imageViewSettings"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/imageViewSimpleScan"
+        android:layout_alignLeft="@+id/imageViewSimpleScan"
+        android:layout_alignStart="@+id/imageViewSimpleScan"
+        />
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        app:srcCompat="@drawable/dokument"
+        android:id="@+id/imageViewDocumentation"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/TextViewSettings"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        app:srcCompat="@drawable/logout"
+        android:id="@+id/imageViewLogout"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/imageViewDocumentation"
+        android:layout_alignLeft="@+id/imageViewSimpleScan"
+        android:layout_alignStart="@+id/imageViewSimpleScan"
+        />
+
+</RelativeLayout>

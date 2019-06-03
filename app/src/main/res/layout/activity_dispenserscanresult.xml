@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/linear_dispenser">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarDispenserScanResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbar"
+        android:titleTextColor="@color/ToolbarTitle" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar_dispenser"
+        android:visibility="visible"
+        tools:visibility="visible"
+        android:progress="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/dispenserpatient"
+            android:layout_below="@+id/progressbar_dispenser" />
+
+        <CheckedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:visibility="invisible"
+            android:id="@+id/ctv0" />
+        <CheckedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:visibility="invisible"
+            android:id="@+id/ctv1" />
+        <CheckedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:visibility="invisible"
+            android:id="@+id/ctv2" />
+        <CheckedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:visibility="invisible"
+            android:id="@+id/ctv3" />
+        <CheckedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:visibility="invisible"
+            android:id="@+id/ctv4" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/ctv4"
+            android:id="@+id/dispensebutton"
+            style="@android:style/Widget.Holo.Light.Button"
+            android:textAlignment="center"
+            android:text="Weiter" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/dispensebutton"
+            android:id="@+id/returnbutton_dispenser"
+            style="@android:style/Widget.Holo.Light.Button"
+            android:textAlignment="center"
+            android:text="Dispenserbestückung beenden"
+            android:visibility="invisible"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbar"
+        android:titleTextColor="@color/ToolbarTitle"
+    />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:scrollbars="vertical"
+        android:layout_weight="1" android:id="@+id/help_scrollview"
+        android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+
+        <LinearLayout android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help_dispenser"
+            android:textColor="@android:color/black"
+            android:text="@string/Dispenserbestückung"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help_medication"
+            android:textColor="@android:color/black"
+            android:text="@string/Medikamentengabe"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help_simplescan"
+            android:textColor="@android:color/black"
+            android:text="@string/Einzelscan"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help_nomedication"
+            android:textColor="@android:color/black"
+            android:text="Kein (konformes) Medikament"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help_tandt"
+            android:textColor="@android:color/black"
+            android:text="Tipps und Tricks"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <WebView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/webview_dispenser"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>

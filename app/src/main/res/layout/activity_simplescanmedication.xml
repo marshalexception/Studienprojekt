@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSimpleScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbar"
+        android:titleTextColor="@color/ToolbarTitle"
+        />
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:scrollbars="horizontal"
+    android:layout_weight="1">
+    <TableLayout android:layout_height="fill_parent"
+        android:layout_width="fill_parent" android:isScrollContainer="true">
+
+        <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/titleatc_medication"
+            android:text="ATC"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/TextSmall"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:id="@+id/titlename_medication"
+            android:text="Name"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/TextSmall"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:id="@+id/titleunit_medication"
+            android:text="Einheit"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/TextSmall"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:id="@+id/titleroamoa_medication"
+            android:text="Einnahmeart"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/TextSmall"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="@android:color/black" />
+
+        <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/atc_medication"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/TextSmall"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:id="@+id/name_medication"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/TextSmall"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:id="@+id/unit_medication"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/TextSmall"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:id="@+id/roamoa_medication"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/TextSmall"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"/>
+    </TableRow>
+
+</TableLayout>
+
+</HorizontalScrollView>
+
+</LinearLayout>

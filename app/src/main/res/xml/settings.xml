@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="pref_sound"
+        android:id="@+id/pref_sound"
+        android:title="@string/settings_sound"
+        android:summary="@string/settings_sound_on"
+        android:defaultValue="@bool/sound_default"
+        />
+    <ListPreference
+        android:key="pref_auto_logout"
+        android:id="@+id/pref_auto_logout"
+        android:title="Automatischer Logout"
+        android:summary="Zeit des Logouts bei Inaktivität festlegen"
+        android:entries="@array/settings_logout_times"
+        android:entryValues="@array/logout_times_values"
+        android:defaultValue="@integer/logout_default"
+        />
+    <ListPreference
+        android:key="pref_text_size"
+        android:id="@+id/pref_text_size"
+        android:title="Schriftgröße"
+        android:summary="Größe der Schrift festlegen"
+        android:entries="@array/settings_text_sizes"
+        android:entryValues="@array/text_sizes_values"
+        android:defaultValue="@integer/textsize_default"
+        />
+    <PreferenceScreen
+        android:key="pref_help"
+        android:id="@+id/help_preferenceScreen"
+        android:title="@string/help"
+        android:persistent="false"
+        />
+
+</PreferenceScreen>

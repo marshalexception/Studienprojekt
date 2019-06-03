@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">MediPocket</string>
+
+    <string-array name="hauptmenü">             <!-- bzw SlideMenü -->
+        <item>Medikamentengabe</item>
+        <item>Dispenserbestückung</item>
+        <item>Einzelscan</item>
+        <item>Einstellungen</item>
+        <item>Logout</item>
+    </string-array>
+    <array name="Icons">
+        <item>@drawable/medikamentengabe</item>
+        <item>@drawable/dispenserbestueckung</item>
+        <item>@drawable/einzelscan</item>
+        <item>@drawable/einstellungen</item>
+        <item>@drawable/logout</item>
+    </array>
+    <string name="Medikamentengabe">Medikamentengabe</string>
+    <string name="Dispenserbestückung">Dispenserbestückung</string>
+    <string name="Einzelscan">Einzelscan</string>
+    <string name="settings">Einstellungen</string>
+    <string name="documentation">Dokumentation</string>
+    <string name="Logout">Logout</string>
+
+    <string name="Login">Login</string>
+    <string name="AlternativLogin"> <u>Mit Benutzerdaten anmelden</u> </string>
+    <string name="LoginButton">Mitarbeiterausweis scannen</string>
+
+    <string name="title_activity_einstellungen">Einstellungen</string>
+    <string name="settings_sound">Akustische Rückmeldung</string>
+    <string name="settings_sound_on">Ton wiedergeben wenn Abgleich fertig ist.</string>
+    <string name="settings_sound_off">Kein Ton wiedergeben wenn Abgleich fertig ist.</string>
+    <string-array name="settings_logout_times">
+        <item>5 Minuten</item>
+        <item>10 Minuten</item>
+        <item>20 Minuten</item>
+        <item>30 Minuten</item>
+        <item>40 Minuten</item>
+        <item>50 Minuten</item>
+        <item>60 Minuten</item>
+    </string-array>
+    <string-array name="logout_times_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string name="pref_sound">Akkustische Rückmeldung</string>
+    <string name="pref_text_size">Textgröße</string>
+    <string name="TextSmall">Klein</string>
+    <string name="TextNormal">Normal</string>
+    <string name="TextLarge">Groß</string>
+    <string-array name="settings_text_sizes">
+        <item>Klein</item>
+        <item>Normal</item>
+        <item>Groß</item>
+    </string-array>
+    <string-array name="text_sizes_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="help">Hilfe</string>
+    <string name="impressum">Impressum</string>
+
+
+</resources>

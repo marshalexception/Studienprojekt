@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_einstellungen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="beispiel.studienprojekt.SettingsActivity">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarsettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbar"
+        android:titleTextColor="@color/ToolbarTitle"
+        android:title="@string/settings"
+        />
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarsettings"/>
+
+<!--
+        <Switch
+            android:text="@string/settings_sound"
+            android:textSize="@dimen/TextNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/SwitchSound"
+            android:layout_below="@+id/toolbarsettings"
+            />
+
+        <TextView
+            android:text="@string/settings_sound_off"
+            android:textSize="@dimen/TextSmall"
+            android:textColor="@color/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TVSound"
+            android:layout_below="@+id/SwitchSound"
+            android:layout_alignLeft="@+id/SwitchSound"
+            android:layout_alignStart="@+id/SwitchSound" />
+
+        <TextView
+            android:text="Automatischer Logout"
+            android:textSize="@dimen/TextNormal"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TVAutomLogout"
+            android:layout_below="@+id/TVSound"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="?attr/selectableItemBackground"
+            />
+
+        <TextView
+            android:text="20 Minuten"
+            android:textSize="@dimen/TextSmall"
+            android:textColor="@color/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TVAutomLogoutTimes"
+            android:layout_below="@+id/TVAutomLogout"
+            android:layout_alignLeft="@+id/SwitchSound"
+            android:layout_alignStart="@+id/SwitchSound" />
+
+        <TextView
+            android:text="Schriftgröße"
+            android:textSize="@dimen/TextNormal"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/TVAutomLogoutTimes"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/TVTextSize"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:text="@string/TextNormal"
+            android:textSize="@dimen/TextSmall"
+            android:textColor="@color/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TVSetTextSize"
+            android:layout_below="@+id/TVTextSize"
+            android:layout_alignLeft="@+id/SwitchSound"
+            android:layout_alignStart="@+id/SwitchSound" />
+
+        <TextView
+            android:text="@string/help"
+            android:textSize="@dimen/TextNormal"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/TVHelp"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:layout_below="@+id/TVSetTextSize" />
+    -->
+</RelativeLayout>

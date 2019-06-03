@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_alternativ"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="beispiel.studienprojekt.LoginAlternativActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbaraltlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbar"
+        android:titleTextColor="@color/ToolbarTitle"
+        android:title="@string/Login"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/Benutzername"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/BenutzerTextView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/Passwort"
+        android:layout_alignLeft="@+id/BenutzerTextView"
+        android:layout_alignStart="@+id/BenutzerTextView"
+        android:id="@+id/PasswortTextView" />
+
+    <Button
+        android:text="@string/Login"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/PasswortTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/ButtonLogin"
+        android:clickable="true"
+        style="@android:style/Widget.Holo.Light.Button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benutzername"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/Benutzername"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/toolbaraltlogin"
+        android:layout_alignLeft="@+id/BenutzerTextView"
+        android:layout_alignStart="@+id/BenutzerTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passwort"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/Passwort"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/BenutzerTextView"
+        android:layout_alignLeft="@+id/PasswortTextView"
+        android:layout_alignStart="@+id/PasswortTextView" />
+
+    <TextView
+        android:text="@string/impressum"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="20dp"
+        android:id="@+id/TextViewImpressum"
+        android:textAlignment="center"
+        android:clickable="true"/>
+
+
+</RelativeLayout>

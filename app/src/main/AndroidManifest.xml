@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="beispiel.studienprojekt">
+
+    <application
+        android:allowBackup="true" android:icon="@drawable/logo" android:label="@string/app_name"
+        android:supportsRtl="true" android:theme="@style/AppTheme" android:largeHeap="true">
+        <activity
+            android:name=".LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginAlternativActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Data" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DispenserScan" android:screenOrientation="portrait" />
+        <activity android:name=".DispenserScanResult" android:screenOrientation="portrait"/>
+        <activity android:name=".MedicationScan" android:screenOrientation="portrait"/>
+        <activity android:name=".DispenserMedicationScan" android:screenOrientation="portrait" />
+        <activity android:name=".SimpleScan" android:screenOrientation="portrait"/>
+        <activity android:name=".SimpleScanResult" android:screenOrientation="landscape"/>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".HelpActivity" android:hardwareAccelerated="false"/>
+        <activity android:name=".Documentation" />
+
+    </application>
+</manifest>
